@@ -1,0 +1,60 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: beige;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#form-container {
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+input,
+label {
+    display: block;
+}
+
+input {
+    margin-bottom: 16px;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+#results-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 1500px;
+    margin: 40px auto;
+    padding: 16px;
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 8px;
+}
+
+.movie-details {
+    display: flex;
+    width: 450px;
+    margin: 16px;
+    padding: 10px;
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 6px;
+}
+
+.movie-details figure {
+    margin-right: 20px;
+}
+
+.movie-details h3 {
+    text-align: center;
+}
