@@ -47,7 +47,7 @@ function Results(props) {
       </>
     );
   } else {
-    return <h2>The results not found</h2>;
+    return <h2>The results not found love</h2>;
   }
 }
 
