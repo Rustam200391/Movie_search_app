@@ -55,6 +55,7 @@ function Movie(props) {
   const details = props.details;
 
   return (
+    <
     <div className="movie-details">
       <figure>
         <img
