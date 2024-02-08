@@ -55,7 +55,7 @@ function Movie(props) {
   const details = props.details;
 
   return (
-    <
+  <>
     <div className="movie-details">
       <figure>
         <img
@@ -70,6 +70,7 @@ function Movie(props) {
         <input type="button" value="Details" />
       </div>
     </div>
+  </>
   );
 }
 
