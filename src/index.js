@@ -55,22 +55,22 @@ function Movie(props) {
   const details = props.details;
 
   return (
-  <>
-    <div className="movie-details">
-      <figure>
-        <img
-          src={details.Poster}
-          alt={`The poster of movie ${details.Title}`}
-        />
-      </figure>
-      <div>
-        <h3>{details.Title}</h3>
-        <h3>{details.Year}</h3>
-        <h3>{details.Type}</h3>
-        <input type="button" value="Details" />
+    <>
+      <div className="movie-details">
+        <figure>
+          <img
+            src={details.Poster}
+            alt={`The poster of movie ${details.Title}`}
+          />
+        </figure>
+        <div>
+          <h3>{details.Title}</h3>
+          <h3>{details.Year}</h3>
+          <h3>{details.Type}</h3>
+          <input type="button" value="Details" />
+        </div>
       </div>
-    </div>
-  </>
+    </>
   );
 }
 
@@ -82,7 +82,7 @@ function App() {
     setTitle(title);
 
     let api_key = "ae8ccebb";
-    let url = `http://www.omdbapi.com/?apikey=${api_key}&s=${title}`;
+    let url = `https://www.omdbapi.com/?apikey=${api_key}&s=${title}`;
 
     axios.get(url).then((response) => {
       console.log("response :>> ", response);
