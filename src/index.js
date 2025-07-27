@@ -78,7 +78,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [results, setResults] = useState([]);
 
-  const hanleClick = (title) => {
+  const handleClick = (title) => {
     setTitle(title);
 
     let api_key = "ae8ccebb";
@@ -93,7 +93,7 @@ function App() {
   return (
     <>
       <h1>The name of Your App</h1>
-      <Form onClick={hanleClick} />
+      <Form onClick={handleClick} />
       <Results title={title} results={results} />
     </>
   );
